@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="amazon.utilities.ExtentreportListenerclass"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="amazon.testcases.TC_myaccountpageTest"/>
+      <class name="amazon.testcases.TC_productpage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->

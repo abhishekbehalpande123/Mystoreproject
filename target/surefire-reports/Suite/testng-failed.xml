@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="amazon.utilities.ExtentreportListenerclass"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="amazon.testcases.TC_myaccountpageTest"/>
+      <class name="amazon.testcases.TC_productpage"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="amazon.testcases.TC_productpage">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- amazon.testcases.TC_productpage -->
+      <class name="amazon.testcases.TC_myaccountpageTest">
+        <methods>
+          <include name="VerifySignOut"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifylogin"/>
+        </methods>
+      </class> <!-- amazon.testcases.TC_myaccountpageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
